@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Your schedule: Carleton to Calendar</title>
+<link rel="stylesheet" href="preview.css">
+</head>
+<body>
+<div class="page">
+
+  <header class="masthead">
+    <div>
+      <div class="brand">Carleton → Calendar</div>
+      <h1 id="term-title">Your schedule</h1>
+      <div class="term-range" id="term-range"></div>
+    </div>
+    <div class="tally" id="tally" aria-live="polite"></div>
+  </header>
+
+  <div class="notices" id="notices"></div>
+
+  <div class="toolbar">
+    <h2>Your week</h2>
+    <label class="switch">
+      <input type="checkbox" id="swap-toggle" checked>
+      <span title="Carleton makes up weekdays lost to holidays by running one
+                   day on another day's schedule. Turn this off to ignore it.">
+        Handle days that run another day's schedule</span>
+    </label>
+  </div>
+
+  <div id="grid-host"></div>
+
+  <section class="roster">
+    <h2>Classes</h2>
+    <div class="hint">Untick anything you don't want in your calendar.</div>
+    <div id="roster"></div>
+  </section>
+
+  <footer class="footer">
+    <div class="excl" id="exclusions"></div>
+    <div class="actions">
+      <button class="btn secondary" id="rescan">Scan again</button>
+      <button class="btn" id="export">Download .ics</button>
+    </div>
+  </footer>
+
+  <div id="done"></div>
+
+  <p class="colophon">
+    Built by <a href="https://github.com/PhoenixStuempel" target="_blank" rel="noopener">Phoenix
+    Stuempel</a>. Unofficial: not affiliated with, endorsed by, or supported by
+    Carleton University. Check important dates against
+    <a href="https://calendar.carleton.ca/academicyear/" target="_blank" rel="noopener">Carleton's
+    academic calendar</a>.
+  </p>
+</div>
+
+<script type="module" src="preview.js"></script>
+</body>
+</html>

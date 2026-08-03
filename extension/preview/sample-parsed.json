@@ -1,0 +1,329 @@
+{
+  "header": {
+    "term": "Fall 2026 (September-December)",
+    "studentName": null,
+    "studentNumber": null
+  },
+  "courses": [
+    {
+      "title": "Introduction to Computer Science",
+      "subject": "COMP",
+      "courseNumber": "1405",
+      "section": "A",
+      "courseCode": "COMP 1405",
+      "crn": "30110",
+      "term": "Fall 2026 (September-December)",
+      "status": "Registered on Jul 14, 2026",
+      "credits": "0.500",
+      "level": "Undergraduate",
+      "campus": "Main Campus",
+      "gradeMode": "Standard Letter Grade",
+      "assignedInstructor": "R. Whitfield",
+      "meetings": [
+        {
+          "meetingType": "Class",
+          "scheduleType": "Lecture",
+          "location": "Azrieli Theatre 101",
+          "instructors": [
+            "R. Whitfield"
+          ],
+          "days": [
+            "TU",
+            "TH"
+          ],
+          "startTime": {
+            "hour": 10,
+            "minute": 5
+          },
+          "endTime": {
+            "hour": 11,
+            "minute": 25
+          },
+          "startDate": "2026-09-09",
+          "endDate": "2026-12-11",
+          "raw": {
+            "time": "10:05 am - 11:25 am",
+            "days": "TR",
+            "dateRange": "Sep 09, 2026 - Dec 11, 2026"
+          },
+          "warnings": [],
+          "isSchedulable": true
+        }
+      ]
+    },
+    {
+      "title": "Introduction to Computer Science",
+      "subject": "COMP",
+      "courseNumber": "1405",
+      "section": "A2",
+      "courseCode": "COMP 1405",
+      "crn": "30114",
+      "term": "Fall 2026 (September-December)",
+      "status": "Registered on Jul 14, 2026",
+      "credits": "0.000",
+      "level": "Undergraduate",
+      "campus": "Main Campus",
+      "gradeMode": "Standard Letter Grade",
+      "assignedInstructor": "R. Whitfield",
+      "meetings": [
+        {
+          "meetingType": "Class",
+          "scheduleType": "Tutorial",
+          "location": "Tory Building 342",
+          "instructors": [
+            "R. Whitfield"
+          ],
+          "days": [
+            "MO"
+          ],
+          "startTime": {
+            "hour": 13,
+            "minute": 5
+          },
+          "endTime": {
+            "hour": 14,
+            "minute": 25
+          },
+          "startDate": "2026-09-09",
+          "endDate": "2026-12-11",
+          "raw": {
+            "time": "1:05 pm - 2:25 pm",
+            "days": "M",
+            "dateRange": "Sep 09, 2026 - Dec 11, 2026"
+          },
+          "warnings": [],
+          "isSchedulable": true
+        }
+      ]
+    },
+    {
+      "title": "Discrete Structures I",
+      "subject": "MATH",
+      "courseNumber": "1800",
+      "section": "B",
+      "courseCode": "MATH 1800",
+      "crn": "30231",
+      "term": "Fall 2026 (September-December)",
+      "status": "Registered on Jul 14, 2026",
+      "credits": "0.500",
+      "level": "Undergraduate",
+      "campus": "Main Campus",
+      "gradeMode": "Standard Letter Grade",
+      "assignedInstructor": "D. Marchetti",
+      "meetings": [
+        {
+          "meetingType": "Class",
+          "scheduleType": "Lecture",
+          "location": "Richcraft Hall 2200",
+          "instructors": [
+            "D. Marchetti"
+          ],
+          "days": [
+            "MO",
+            "WE"
+          ],
+          "startTime": {
+            "hour": 8,
+            "minute": 35
+          },
+          "endTime": {
+            "hour": 9,
+            "minute": 55
+          },
+          "startDate": "2026-09-09",
+          "endDate": "2026-12-11",
+          "raw": {
+            "time": "8:35 am - 9:55 am",
+            "days": "MW",
+            "dateRange": "Sep 09, 2026 - Dec 11, 2026"
+          },
+          "warnings": [],
+          "isSchedulable": true
+        }
+      ]
+    },
+    {
+      "title": "Foundations of Data Science",
+      "subject": "STAT",
+      "courseNumber": "2507",
+      "section": "C",
+      "courseCode": "STAT 2507",
+      "crn": "30348",
+      "term": "Fall 2026 (September-December)",
+      "status": "Registered on Jul 14, 2026",
+      "credits": "0.500",
+      "level": "Undergraduate",
+      "campus": "Main Campus",
+      "gradeMode": "Standard Letter Grade",
+      "assignedInstructor": "P. Oyelaran",
+      "meetings": [
+        {
+          "meetingType": "Class",
+          "scheduleType": "Lecture",
+          "location": "Nideyinàn (former UC) 279",
+          "instructors": [
+            "P. Oyelaran"
+          ],
+          "days": [
+            "TU",
+            "FR"
+          ],
+          "startTime": {
+            "hour": 13,
+            "minute": 5
+          },
+          "endTime": {
+            "hour": 14,
+            "minute": 25
+          },
+          "startDate": "2026-09-09",
+          "endDate": "2026-12-11",
+          "raw": {
+            "time": "1:05 pm - 2:25 pm",
+            "days": "TF",
+            "dateRange": "Sep 09, 2026 - Dec 11, 2026"
+          },
+          "warnings": [],
+          "isSchedulable": true
+        }
+      ]
+    },
+    {
+      "title": "Foundations of Data Science",
+      "subject": "STAT",
+      "courseNumber": "2507",
+      "section": "C4",
+      "courseCode": "STAT 2507",
+      "crn": "30352",
+      "term": "Fall 2026 (September-December)",
+      "status": "Registered on Jul 14, 2026",
+      "credits": "0.000",
+      "level": "Undergraduate",
+      "campus": "Main Campus",
+      "gradeMode": "Standard Letter Grade",
+      "assignedInstructor": "TBA",
+      "meetings": [
+        {
+          "meetingType": "Class",
+          "scheduleType": "Laboratory",
+          "location": "Herzberg Laboratories 4385",
+          "instructors": [],
+          "days": [
+            "WE"
+          ],
+          "startTime": {
+            "hour": 14,
+            "minute": 35
+          },
+          "endTime": {
+            "hour": 15,
+            "minute": 55
+          },
+          "startDate": "2026-09-09",
+          "endDate": "2026-12-11",
+          "raw": {
+            "time": "2:35 pm - 3:55 pm",
+            "days": "W",
+            "dateRange": "Sep 09, 2026 - Dec 11, 2026"
+          },
+          "warnings": [],
+          "isSchedulable": true
+        }
+      ]
+    },
+    {
+      "title": "Technical Communication",
+      "subject": "ENGL",
+      "courseNumber": "2005",
+      "section": "D",
+      "courseCode": "ENGL 2005",
+      "crn": "30467",
+      "term": "Fall 2026 (September-December)",
+      "status": "Registered on Jul 14, 2026",
+      "credits": "0.500",
+      "level": "Undergraduate",
+      "campus": "Main Campus",
+      "gradeMode": "Standard Letter Grade",
+      "assignedInstructor": "M. Deshpande",
+      "meetings": [
+        {
+          "meetingType": "Class",
+          "scheduleType": "Lecture",
+          "location": "ON LINE",
+          "instructors": [
+            "M. Deshpande"
+          ],
+          "days": [
+            "TU",
+            "TH"
+          ],
+          "startTime": {
+            "hour": 11,
+            "minute": 35
+          },
+          "endTime": {
+            "hour": 12,
+            "minute": 55
+          },
+          "startDate": "2026-09-09",
+          "endDate": "2026-12-11",
+          "raw": {
+            "time": "11:35 am - 12:55 pm",
+            "days": "TR",
+            "dateRange": "Sep 09, 2026 - Dec 11, 2026"
+          },
+          "warnings": [],
+          "isSchedulable": true
+        }
+      ]
+    },
+    {
+      "title": "Ethics and Technology",
+      "subject": "PHIL",
+      "courseNumber": "2103",
+      "section": "A",
+      "courseCode": "PHIL 2103",
+      "crn": "30512",
+      "term": "Fall 2026 (September-December)",
+      "status": "Registered on Jul 14, 2026",
+      "credits": "0.500",
+      "level": "Undergraduate",
+      "campus": "Main Campus",
+      "gradeMode": "Standard Letter Grade",
+      "assignedInstructor": "S. Bergeron",
+      "meetings": [
+        {
+          "meetingType": "Class",
+          "scheduleType": "Lecture",
+          "location": "Mackenzie Building 3380",
+          "instructors": [
+            "S. Bergeron"
+          ],
+          "days": [
+            "MO",
+            "WE"
+          ],
+          "startTime": {
+            "hour": 16,
+            "minute": 5
+          },
+          "endTime": {
+            "hour": 17,
+            "minute": 25
+          },
+          "startDate": "2026-09-09",
+          "endDate": "2026-12-11",
+          "raw": {
+            "time": "4:05 pm - 5:25 pm",
+            "days": "MW",
+            "dateRange": "Sep 09, 2026 - Dec 11, 2026"
+          },
+          "warnings": [],
+          "isSchedulable": true
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "isSchedulePage": true
+}

@@ -1,0 +1,145 @@
+/* Letterpress, popup scale. Fixed 360px width: Chrome caps popups at 800x600
+   and sizes them from content, so no vh or percentage heights. */
+
+:root {
+  --bg: #EFE7DA;
+  --surface: #F8F3EA;
+  --ink: #2B2118;
+  --muted: #6E6152;
+  --rule: #D6C8B4;
+  --accent: #8C2F39;
+  --flag: #A8722C;
+  --flag-bg: #F4E8D3;
+  --serif: 'EB Garamond', Garamond, 'Hoefler Text', Georgia, serif;
+  --text: 'Newsreader', Charter, Georgia, serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  width: 360px;
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--text);
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+.head { padding: 18px 20px 15px; border-bottom: 1px solid var(--rule); }
+.brand {
+  font-family: var(--serif); font-size: 10.5px; letter-spacing: .2em;
+  text-transform: uppercase; color: var(--accent); margin-bottom: 10px;
+}
+h1 {
+  margin: 0; font-family: var(--serif); font-size: 27px; font-weight: 500;
+  line-height: 1.05; letter-spacing: -.01em;
+}
+.sub { font-size: 13px; color: var(--muted); font-style: italic; margin-top: 7px; }
+.sub:empty { display: none; }
+
+.body { padding: 16px 20px 19px; }
+
+.detail { font-size: 14px; line-height: 1.65; margin-bottom: 15px; }
+.detail:empty { display: none; }
+.detail b { font-weight: 600; }
+/* Both figures take the display face. Letting one inherit the body serif put
+   two different typefaces in the same sentence, which reads as a glitch. */
+.detail .count { font-family: var(--serif); font-size: 21px; }
+.detail .count-sm { font-family: var(--serif); font-size: 19px; font-weight: 500; }
+.detail .warn { color: var(--flag); font-style: italic; }
+.detail ul { margin: 8px 0 0; padding-left: 18px; }
+.detail li { margin-bottom: 2px; }
+
+/* Numbered walkthrough for people who have not found the page yet. Counter
+   rather than <ol> markers so the numerals pick up the display face. */
+.steps {
+  margin: 11px 0 0; padding: 0; list-style: none; counter-reset: step;
+  font-size: 13.5px; line-height: 1.5;
+}
+.steps li {
+  counter-increment: step; position: relative;
+  padding-left: 24px; margin-bottom: 7px;
+}
+.steps li::before {
+  content: counter(step) '.';
+  position: absolute; left: 0; top: 0;
+  font-family: var(--serif); color: var(--accent);
+  font-size: 14px; font-variant-numeric: lining-nums;
+}
+.steps li:last-child { margin-bottom: 0; }
+
+/* Inline term switcher. Sits under the count so changing term is one action
+   rather than a separate screen. */
+.term-switch {
+  display: flex; align-items: center; gap: 10px;
+  margin-top: 14px; padding-top: 13px;
+  border-top: 1px solid var(--rule);
+}
+.term-switch > span {
+  font-family: var(--serif); font-size: 11px; letter-spacing: .16em;
+  text-transform: uppercase; color: var(--muted);
+}
+.term-switch select {
+  flex: 1; min-width: 0;
+  padding: 6px 8px;
+  font-family: var(--text); font-size: 13.5px;
+  color: var(--ink); background: var(--surface);
+  border: 1px solid var(--rule); border-radius: 2px;
+  cursor: pointer;
+}
+.term-switch select:hover { border-color: var(--accent); }
+.term-switch select:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+
+/* Standalone prompt rather than a switcher tucked under a count: no rule
+   above it, and the label sits over a full-width select. */
+.term-switch.stacked {
+  display: block; margin-top: 4px; padding-top: 0; border-top: 0;
+}
+.term-switch.stacked > span { display: block; margin-bottom: 7px; }
+.term-switch.stacked select { width: 100%; padding: 8px; font-size: 14px; }
+
+.actions { display: flex; flex-direction: column; gap: 8px; }
+
+button {
+  width: 100%; padding: 11px; cursor: pointer;
+  font-family: var(--serif); font-size: 15.5px; letter-spacing: .02em;
+  background: var(--accent); color: var(--surface); border: 0;
+}
+button:hover { background: #7A2831; }
+button:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+button[disabled] { background: #B5AA98; cursor: default; }
+button.ghost { background: transparent; color: var(--muted); border: 1px solid var(--rule); }
+button.ghost:hover { background: var(--surface); color: var(--ink); }
+
+.status {
+  padding: 0 20px; font-size: 13px; color: var(--muted); line-height: 1.5;
+}
+.status:not(:empty) { padding-bottom: 18px; }
+.status.error { color: #8A2A22; }
+
+.note {
+  margin-top: 13px; padding: 10px 13px; background: var(--flag-bg);
+  border-left: 2px solid var(--flag); font-size: 13px; font-style: italic;
+  color: #6B4818; line-height: 1.5;
+}
+
+/* Skeleton rows while scanning: less perceived wait than a spinner, and no
+   layout jump when the real content arrives. */
+.skeleton { display: flex; flex-direction: column; gap: 9px; margin-bottom: 15px; }
+.skeleton i {
+  display: block; height: 13px; background: linear-gradient(
+    90deg, var(--rule) 0%, #E4DACA 50%, var(--rule) 100%);
+  background-size: 200% 100%; animation: shimmer 1.3s ease-in-out infinite;
+}
+.skeleton i:nth-child(2) { width: 78%; }
+.skeleton i:nth-child(3) { width: 55%; }
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .skeleton i { animation: none; }
+}

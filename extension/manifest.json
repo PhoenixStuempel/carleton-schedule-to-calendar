@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Carleton Schedule to Calendar",
+  "version": "0.1.0",
+  "description": "Turn your Carleton Central class schedule into a calendar file, with reading week and holidays already excluded.",
+  "permissions": ["scripting", "storage"],
+  "host_permissions": ["https://central.carleton.ca/*"],
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_title": "Carleton Schedule to Calendar"
+  },
+  "icons": {
+    "16": "icons/icon-16.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  }
+}

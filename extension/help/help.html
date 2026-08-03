@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>How to use Carleton Schedule to Calendar</title>
+<link rel="stylesheet" href="help.css">
+</head>
+<body>
+  <main class="page">
+    <header class="head">
+      <div class="brand">Carleton &rarr; Calendar</div>
+      <h1>Finding your schedule</h1>
+      <p class="lede">
+        The short version: log in to Carleton Central, click the extension,
+        pick your term, and hit <b>Review &amp; export</b>. It handles the rest.
+        The longer walkthrough below is for when something does not line up.
+      </p>
+    </header>
+
+    <ol class="steps">
+      <li>
+        <h2>Log in to Carleton Central</h2>
+        <p>
+          Go to <a href="https://central.carleton.ca" target="_blank"
+          rel="noopener">central.carleton.ca</a> and sign in as usual. The
+          extension cannot log in for you, and it never sees your password.
+        </p>
+      </li>
+
+      <li>
+        <h2>Click the extension</h2>
+        <p>
+          Anywhere in Carleton Central. It works out where you are and offers a
+          term dropdown, so you never have to find Detail Schedule yourself. If
+          you would rather navigate manually, that route is below.
+        </p>
+      </li>
+
+      <li>
+        <h2>Pick your term and export</h2>
+        <p>
+          Choose a term <b>in the popup</b> and hit <b>Review &amp; export</b>.
+          It loads that term, reads your classes, and opens the review page,
+          where you can untick anything you do not want before downloading.
+        </p>
+        <p>
+          Always choose the term in the popup rather than on the page. Clicking
+          the page closes the popup, since Chrome dismisses one as soon as you
+          click away.
+        </p>
+        <figure>
+          <img src="img/step-term.png"
+               alt="The Registration Term page, with the term dropdown
+                    outlined in red and a Submit button below it.">
+        </figure>
+      </li>
+    </ol>
+
+    <section class="aside">
+      <h2>Finding it manually</h2>
+      <p>
+        If you would rather not use the shortcut, it is two clicks from the
+        main menu. Under <b>Registration</b>, click <b>Student Timetable</b>.
+      </p>
+      <figure>
+        <img src="img/step-timetable.png"
+             alt="The Carleton Central main menu, with the Student Timetable
+                  link under the Registration heading outlined in red.">
+      </figure>
+      <p>
+        That opens a week grid. The link you want is in the row at the
+        <b>bottom</b> of that page.
+      </p>
+      <figure>
+        <img src="img/step-detail.png"
+             alt="The bottom of the Student Timetable page, with the Detail
+                  Schedule link outlined in red.">
+      </figure>
+    </section>
+
+    <section class="aside">
+      <h2>If something goes wrong</h2>
+      <dl>
+        <dt>"Not a schedule page"</dt>
+        <dd>
+          You are in Carleton Central but not on Detail Schedule. The week-grid
+          timetable is a different page. Pick a term in the extension and it
+          will go there for you.
+        </dd>
+
+        <dt>"Session timed out"</dt>
+        <dd>
+          Carleton Central logs out after a few minutes idle. Log back in and
+          open the schedule again.
+        </dd>
+
+        <dt>"No classes found"</dt>
+        <dd>
+          The page loaded with no courses on it. Usually the wrong term is
+          selected, rather than an empty schedule.
+        </dd>
+
+        <dt>The term picker stopped appearing</dt>
+        <dd>
+          Carleton Central remembers the term you picked and keeps serving it,
+          so Detail Schedule stops asking. Use the term dropdown in the
+          extension to jump straight to another one, instead of logging out and
+          back in.
+        </dd>
+      </dl>
+    </section>
+
+    <section class="aside">
+      <h2>After you export</h2>
+      <p>
+        You get an <code>.ics</code> file, which every major calendar app can
+        import. In Outlook: <b>File &rarr; Open &amp; Export &rarr;
+        Import/Export &rarr; Import an iCalendar (.ics)</b>. Google Calendar and
+        Apple Calendar both accept the same file.
+      </p>
+      <p class="note">
+        Worth importing into a secondary calendar first, so removing it is one
+        click if you change your mind.
+      </p>
+    </section>
+
+    <footer class="foot">
+      Unofficial: not affiliated with, endorsed by, or supported by Carleton
+      University. Check important dates against
+      <a href="https://calendar.carleton.ca/academicyear/" target="_blank"
+         rel="noopener">Carleton's academic calendar</a>.
+    </footer>
+  </main>
+</body>
+</html>
